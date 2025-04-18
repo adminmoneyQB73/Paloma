@@ -38,10 +38,11 @@ git clone https://github.com/palomachain/paloma
 cd paloma
 git checkout v2.4.2
 ```
-# Install libwasmvm
+**Install libwasmvm**
+```
 curl -L https://github.com/CosmWasm/wasmvm/releases/download/v1.5.0/libwasmvm.x86_64.so > libwasmvm.x86_64.so
 sudo mv -f libwasmvm.x86_64.so /usr/lib/libwasmvm.x86_64.so
-
+```
 # Build binary
 make install
 
