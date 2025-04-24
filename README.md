@@ -25,14 +25,7 @@ echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.profile
 source .profile
 ```
 
-Node Installation
-
-Node Name
-
-Your Node Name
-Port prefix
-
-121
+**Node Installation**
 **Clone project repository**
 ```
 cd && rm -rf paloma
@@ -45,8 +38,11 @@ git checkout v2.4.2
 curl -L https://github.com/CosmWasm/wasmvm/releases/download/v1.5.0/libwasmvm.x86_64.so > libwasmvm.x86_64.so
 sudo mv -f libwasmvm.x86_64.so /usr/lib/libwasmvm.x86_64.so
 ```
-# Build binary
+
+**Build binary**
+```
 make install
+```
 
 # Prepare cosmovisor directories
 mkdir -p $HOME/.paloma/cosmovisor/genesis/bin
