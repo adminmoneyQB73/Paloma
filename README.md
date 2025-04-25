@@ -44,9 +44,11 @@ sudo mv -f libwasmvm.x86_64.so /usr/lib/libwasmvm.x86_64.so
 make install
 ```
 
-# Prepare cosmovisor directories
+**Prepare cosmovisor directories**
+```
 mkdir -p $HOME/.paloma/cosmovisor/genesis/bin
 ln -s $HOME/.paloma/cosmovisor/genesis $HOME/.paloma/cosmovisor/current -f
+```
 
 # Copy binary to cosmovisor directory
 cp $(which palomad) $HOME/.paloma/cosmovisor/genesis/bin
