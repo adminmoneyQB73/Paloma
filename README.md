@@ -50,8 +50,10 @@ mkdir -p $HOME/.paloma/cosmovisor/genesis/bin
 ln -s $HOME/.paloma/cosmovisor/genesis $HOME/.paloma/cosmovisor/current -f
 ```
 
-# Copy binary to cosmovisor directory
+**Copy binary to cosmovisor directory**
+```
 cp $(which palomad) $HOME/.paloma/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 palomad config chain-id tumbler
