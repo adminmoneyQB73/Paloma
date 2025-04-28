@@ -55,10 +55,12 @@ ln -s $HOME/.paloma/cosmovisor/genesis $HOME/.paloma/cosmovisor/current -f
 cp $(which palomad) $HOME/.paloma/cosmovisor/genesis/bin
 ```
 
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 palomad config chain-id tumbler
 palomad config keyring-backend file
 palomad config node tcp://localhost:12157
+```
 
 # Initialize the node
 palomad init "Your Node Name" --chain-id tumbler
