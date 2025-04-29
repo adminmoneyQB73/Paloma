@@ -62,8 +62,10 @@ palomad config keyring-backend file
 palomad config node tcp://localhost:12157
 ```
 
-# Initialize the node
+**Initialize the node**
+```
 palomad init "Your Node Name" --chain-id tumbler
+```
 
 # Download genesis and addrbook files
 curl -L https://snapshots.nodejumper.io/paloma/genesis.json > $HOME/.paloma/config/genesis.json
