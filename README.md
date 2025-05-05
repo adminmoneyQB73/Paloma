@@ -78,8 +78,10 @@ curl -L https://snapshots.nodejumper.io/paloma/addrbook.json > $HOME/.paloma/con
 sed -i -e 's|^seeds *=.*|seeds = "400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc@paloma.rpc.kjnodes.com:11059,ab6875bd52d6493f39612eb5dff57ced1e3a5ad6@95.217.229.18:10656,9581fadb9a32f2af89d575bb0f2661b9bb216d41@93.190.141.218:26656,874ccf9df2e4c678a18a1fb45a1d3bb703f87fa0@65.109.172.249:26656"|' $HOME/.paloma/config/config.toml
 ```
 
-# Set minimum gas price
+**Set minimum gas price**
+```
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.01ugrain"|' $HOME/.paloma/config/app.toml
+```
 
 # Set pruning
 sed -i \
