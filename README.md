@@ -92,8 +92,10 @@ sed -i \
   $HOME/.paloma/config/app.toml
 ```
 
-# Enable prometheus
+**Enable prometheus**
+```
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.paloma/config/config.toml
+```
 
 # Change ports
 sed -i -e "s%:1317%:12117%; s%:8080%:12180%; s%:9090%:12190%; s%:9091%:12191%; s%:8545%:12145%; s%:8546%:12146%; s%:6065%:12165%" $HOME/.paloma/config/app.toml
