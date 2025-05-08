@@ -97,9 +97,11 @@ sed -i \
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.paloma/config/config.toml
 ```
 
-# Change ports
+**Change ports**
+```
 sed -i -e "s%:1317%:12117%; s%:8080%:12180%; s%:9090%:12190%; s%:9091%:12191%; s%:8545%:12145%; s%:8546%:12146%; s%:6065%:12165%" $HOME/.paloma/config/app.toml
 sed -i -e "s%:26658%:12158%; s%:26657%:12157%; s%:6060%:12160%; s%:26656%:12156%; s%:26660%:12161%" $HOME/.paloma/config/config.toml
+```
 
 # Download latest chain data snapshot
 curl "https://snapshots.nodejumper.io/paloma/paloma_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.paloma"
