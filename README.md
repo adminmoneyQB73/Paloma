@@ -103,8 +103,10 @@ sed -i -e "s%:1317%:12117%; s%:8080%:12180%; s%:9090%:12190%; s%:9091%:12191%; s
 sed -i -e "s%:26658%:12158%; s%:26657%:12157%; s%:6060%:12160%; s%:26656%:12156%; s%:26660%:12161%" $HOME/.paloma/config/config.toml
 ```
 
-# Download latest chain data snapshot
+**Download latest chain data snapshot**
+```
 curl "https://snapshots.nodejumper.io/paloma/paloma_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.paloma"
+```
 
 # Install Cosmovisor
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.0
